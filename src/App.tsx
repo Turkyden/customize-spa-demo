@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Button } from "./components";
+import { Button, Foo } from "./components";
 
 export default function App() {
   return (
@@ -15,6 +15,9 @@ export default function App() {
           <li>
             <Link to="/refactor">Refactor</Link>
           </li>
+          <li>
+            <Link to="/foo">Foo</Link>
+          </li>
         </ul>
 
         <hr />
@@ -28,6 +31,9 @@ export default function App() {
           </Route>
           <Route path="/refactor">
             <Button type="primary">Button</Button>
+          </Route>
+          <Route path="/foo">
+            <Foo />
           </Route>
         </Switch>
       </div>

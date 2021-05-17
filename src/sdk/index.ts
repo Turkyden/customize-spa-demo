@@ -1,18 +1,19 @@
 import React from "react";
 
-declare var window: Window & { pcComponentsConfig: PcComponentsConfig };
-
-type PcComponentsConfig = {
-  [K in string]: OverwriteInRender;
-};
-
-type OverwriteInRender = {
-  rewriteFn?: (newProps: any) => any;
-  refactorFn?: (Com: any, newProps: any) => any;
+declare var window: Window & {
+  pcComponentsConfig: {
+    [K in string]?: {
+      rewriteFn?: (newProps: any) => any;
+      refactorFn?: (Com: any, newProps: any) => any;
+    };
+  };
 };
 
 // proxy component
 export function middleware(Com: any, displayName?: string): any {
+  if (!window.pcComponentsConfig) return Com;
+  if (!window.pcComponentsConfig[displayName || Com.displayName]) return Com;
+
   const comMap = window.pcComponentsConfig[displayName || Com.displayName];
 
   if (!comMap) return Com;

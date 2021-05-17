@@ -11,23 +11,31 @@ window.pcComponentsConfig = {
     },
     refactorFn: (Com, newProps) => {
       if (!window.location.pathname.includes("refactor")) return;
-
       const { antd } = window;
-      const { Button, version } = antd;
-
+      const { DatePicker, version } = antd;
       const NewCom = (props) => {
         return (
           <div className="App">
             <h1>antd version: {version}</h1>
-            <Button type="primary" style={{ marginLeft: 8 }}>
+            <DatePicker />
+            <Com type="primary" style={{ marginLeft: 8 }}>
               Primary Button
-            </Button>
+            </Com>
           </div>
         );
       };
       return {
         com: NewCom,
         props: newProps
+      };
+    }
+  },
+  Foo: {
+    rewriteFn: (newProps) => {
+      if (!window.location.pathname.includes("foo")) return;
+      return {
+        ...newProps,
+        children: <i>bar</i>
       };
     }
   }
