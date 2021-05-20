@@ -1,6 +1,6 @@
 ## Tiny Procode
 
-SPA 单页应用无侵入二次开发解决方案
+⚡ A procode solution for SPA（Single Page Application）
 
 ![screenshot](./screenshot.png)
 
