@@ -1,6 +1,6 @@
 ## Tiny Procode
 
-⚡ A procode solution for SPA（Single Page Application）
+⚡ A procode solution for SPA (Single Page Application)
 
 ![screenshot](./screenshot.png)
 
