@@ -48,6 +48,11 @@ window.pcComponentsConfig = {
 
 ### Step 3
 
-Reload the browser and load the new version of `customize.js`.
+Added the **@babel/standalone** at index.html and reload the browser to fetch the new version of `customize.js`.
+
+```html
+<script crossorigin src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+<script type="text/babel" src="%PUBLIC_URL%/customize.js"></script>
+```
 
 [![Edit focused-morning-ssyg5](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/focused-morning-ssyg5?fontsize=14&hidenavigation=1&theme=dark)
