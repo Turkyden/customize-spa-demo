@@ -2,7 +2,7 @@
 
 ⚡ A procode solution for SPA (Single Page Application)
 
-Add the `midleware` for Your libs
+Add the **midleware** for Your libs
 
 ```ts
 function Button() {
