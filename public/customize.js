@@ -1,5 +1,12 @@
+/**
+ * 无侵入二次开发代码片段
+ */
 window.pcComponentsConfig = {
   Button: {
+    /**
+     * 复写：仅仅代理组件 props，维持组件基本形态
+     * @param {*} newProps
+     */
     rewriteFn: (newProps) => {
       if (!window.location.pathname.includes("rewrite")) return;
       return {
@@ -9,6 +16,11 @@ window.pcComponentsConfig = {
         onClick: () => window.alert("Rewrited")
       };
     },
+    /**
+     * 重构：完全替换当前组件，适用于改动较大的版块
+     * @param {*} Com
+     * @param {*} newProps
+     */
     refactorFn: (Com, newProps) => {
       if (!window.location.pathname.includes("refactor")) return;
       const { antd } = window;
