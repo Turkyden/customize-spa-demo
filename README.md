@@ -4,7 +4,7 @@
 
 ### Step 1
 
-Add the **midleware** for Your Button in UI library:
+Add the **midleware** for your Button in UI library:
 
 ```ts
 function Button() {
