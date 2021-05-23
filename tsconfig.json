@@ -6,11 +6,6 @@
         "strict": true,
         "esModuleInterop": true,
         "noFallthroughCasesInSwitch": true,
-        "paths": {
-            "@/*": [
-                "src/*"
-            ]
-        },
         "lib": [
             "dom",
             "es2015"
