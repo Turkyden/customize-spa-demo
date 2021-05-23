@@ -6,7 +6,7 @@ Add the **midleware** for Your libs
 
 ```ts
 function Button() {
-  ...
+  // ...
 }
 
 export default midleware(Button);
