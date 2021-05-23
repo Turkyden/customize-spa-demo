@@ -43,16 +43,6 @@ window.pcComponentsConfig = {
         props: newProps
       };
     }
-  },
-  Foo: {
-    rewriteFn: (newProps) => {
-      // todo ...
-      
-      return {
-        ...newProps,
-        children: <i>bar</i>
-      };
-    }
   }
 };
 ```
