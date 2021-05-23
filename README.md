@@ -48,7 +48,7 @@ window.pcComponentsConfig = {
 
 ### Step 3
 
-Added the **@babel/standalone** at index.html and reload the browser to fetch the new version of `customize.js`.
+Added the **@babel/standalone** at index.html and reload the browser to fetch the new version of **customize.js**.
 
 ```html
 <script crossorigin src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
