@@ -32,7 +32,7 @@ window.pcComponentsConfig = {
     },
     /**
      * Refactor the component and make a great change.
-     * @param {*} Com 
+     * @param {*} newCom 
      * @param {*} newProps 
      */
     refactorFn: (newCom, newProps) => {
