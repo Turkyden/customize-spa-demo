@@ -25,7 +25,6 @@ window.pcComponentsConfig = {
   Button: {
     /**
      * Rewrite the component and just replace some props.
-     * @param {*} newProps
      */
     rewriteFn: (newProps) => {
       // Todo ...
@@ -34,8 +33,6 @@ window.pcComponentsConfig = {
     },
     /**
      * Refactor the component and make a great change.
-     * @param {*} newCom 
-     * @param {*} newProps 
      */
     refactorFn: (newCom, newProps) => {
       // Todo ...
