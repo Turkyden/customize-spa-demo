@@ -2,7 +2,7 @@
 
 ⚡ A procode solution for SPA (Single Page Application)
 
-Your libs
+Add the `midleware` for Your libs
 
 ```ts
 function Button() {
@@ -14,22 +14,22 @@ export default midleware(Button);
 
 Write the snipit withe monaco editor:
 
-```
+```js
 window.pcComponentsConfig = {
   Button: {
     /**
-     * 复写：仅仅代理组件 props，维持组件基本形态
+     * Rewrite the component and just replace some props.
      * @param {*} newProps
      */
     rewriteFn: (newProps) => {
-    
       // todo ...
+      
       return newProps
     },
     /**
-     * 重构：完全替换当前组件，适用于改动较大的版块
-     * @param {*} Com
-     * @param {*} newProps
+     * Refactor the component and make a great change.
+     * @param {*} Com 
+     * @param {*} newProps 
      */
     refactorFn: (Com, newProps) => {
       // todo ...
