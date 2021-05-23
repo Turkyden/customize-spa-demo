@@ -2,7 +2,9 @@
 
 ⚡ A procode solution for SPA (Single Page Application)
 
-Add the **midleware** for Your libs
+### Step 1
+
+Add the **midleware** for Your Button in UI library:
 
 ```ts
 function Button() {
@@ -12,7 +14,9 @@ function Button() {
 export default midleware(Button);
 ```
 
-Write the snipit withe monaco editor:
+### Step 2
+
+Write the snipit with the online web editor (monaco):
 
 ```js
 window.pcComponentsConfig = {
