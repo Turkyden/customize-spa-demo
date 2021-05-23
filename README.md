@@ -18,7 +18,7 @@ export default midleware(Button);
 
 ### Step 2
 
-Write the code snippet in **customize.js** with the online web editor (monaco):
+Write the code snippet in **customize.js** with the online web editor ([monaco-editor](https://github.com/microsoft/monaco-editor)):
 
 ```js
 window.pcComponentsConfig = {
