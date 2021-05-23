@@ -35,11 +35,11 @@ window.pcComponentsConfig = {
      * @param {*} Com 
      * @param {*} newProps 
      */
-    refactorFn: (Com, newProps) => {
+    refactorFn: (newCom, newProps) => {
       // todo ...
       
       return {
-        com: NewCom,
+        com: newCom,
         props: newProps
       };
     }
