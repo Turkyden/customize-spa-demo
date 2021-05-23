@@ -16,7 +16,7 @@ export default midleware(Button);
 
 ### Step 2
 
-Write the snipit with the online web editor (monaco):
+Write the code snippet with the online web editor (monaco):
 
 ```js
 window.pcComponentsConfig = {
@@ -56,6 +56,10 @@ window.pcComponentsConfig = {
   }
 };
 ```
+
+### Step 3
+
+Reload the browser and load the new version of `customize.js`.
 
 ![screenshot](./screenshot.png)
 
