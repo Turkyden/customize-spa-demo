@@ -26,7 +26,7 @@ window.pcComponentsConfig = {
      * @param {*} newProps
      */
     rewriteFn: (newProps) => {
-      // todo ...
+      // Todo ...
       
       return newProps
     },
@@ -36,7 +36,7 @@ window.pcComponentsConfig = {
      * @param {*} newProps 
      */
     refactorFn: (newCom, newProps) => {
-      // todo ...
+      // Todo ...
       
       return {
         com: newCom,
