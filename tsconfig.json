@@ -3,19 +3,18 @@
         "./src/**/*"
     ],
     "compilerOptions": {
-        "target": "esnext",
-        "module": "esnext",
-        "moduleResolution": "node",
-        "importHelpers": true,
-        "jsx": "react-jsx",
-        "esModuleInterop": true,
-        "sourceMap": true,
-        "baseUrl": "./",
         "strict": true,
+        "esModuleInterop": true,
+        "noFallthroughCasesInSwitch": true,
         "paths": {
-          "@/*": ["src/*"],
-          "@@/*": ["src/.umi/*"]
+            "@/*": [
+                "src/*"
+            ]
         },
-        "allowSyntheticDefaultImports": true
+        "lib": [
+            "dom",
+            "es2015"
+        ],
+        "jsx": "react-jsx"
     }
 }
