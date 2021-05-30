@@ -55,4 +55,8 @@ Added the [@babel/standalone](https://github.com/babel/babel/tree/main/packages/
 <script type="text/babel" src="%PUBLIC_URL%/customize.js"></script>
 ```
 
+### Todo
+
+- [React.lazy + Suspense](https://zh-hans.reactjs.org/docs/concurrent-mode-suspense.html#gatsby-focus-wrapper)
+
 [![Edit focused-morning-ssyg5](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/focused-morning-ssyg5?fontsize=14&hidenavigation=1&theme=dark)
