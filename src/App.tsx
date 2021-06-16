@@ -4,7 +4,7 @@ import { Button, Foo } from "./components";
 export default function App() {
   return (
     <Router>
-      <div>
+      <div style={{ padding: "2rem" }}>
         <ul>
           <li>
             <Link to="/">Standard</Link>

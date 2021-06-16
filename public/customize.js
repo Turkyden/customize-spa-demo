@@ -12,8 +12,8 @@ window.pcComponentsConfig = {
       return {
         ...newProps,
         danger: true,
-        children: <i>Rewrited</i>,
-        onClick: () => window.alert("Rewrited")
+        children: <i>Rewrited it</i>,
+        onClick: () => window.alert("Rewrited it !")
       };
     },
     /**
@@ -30,9 +30,13 @@ window.pcComponentsConfig = {
           <div className="App">
             <h1>antd version: {version}</h1>
             <DatePicker />
-            <Com type="primary" style={{ marginLeft: 8 }}>
-              Primary Button
-            </Com>
+            <Com {...props} type="dashed" style={{ marginLeft: 8 }} />
+            <p style={{ paddingTop: "1rem" }}>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Cupiditate harum molestiae totam ab sequi dolor praesentium
+              similique quod ipsum a perferendis inventore eius assumenda
+              nesciunt distinctio incidunt deleniti, illo eos!
+            </p>
           </div>
         );
       };
