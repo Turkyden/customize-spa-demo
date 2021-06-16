@@ -51,7 +51,11 @@ window.pcComponentsConfig = {
       if (!window.location.pathname.includes("foo")) return;
       return {
         ...newProps,
-        children: <i>bar</i>
+        children: (
+          <i>
+            Rewited {newProps.children} as <b>bar</b>
+          </i>
+        )
       };
     }
   }

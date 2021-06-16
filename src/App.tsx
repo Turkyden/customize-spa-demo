@@ -7,16 +7,16 @@ export default function App() {
       <div style={{ padding: "2rem" }}>
         <ul>
           <li>
-            <Link to="/">Standard</Link>
+            <Link to="/">Standard Component</Link>
           </li>
           <li>
-            <Link to="/rewrite">Rewrite</Link>
+            <Link to="/rewrite">Rewrite Standard Component</Link>
           </li>
           <li>
-            <Link to="/refactor">Refactor</Link>
+            <Link to="/refactor">Refactor Standard Component</Link>
           </li>
           <li>
-            <Link to="/foo">Foo</Link>
+            <Link to="/foo">Rewrite Customized Component</Link>
           </li>
         </ul>
 
@@ -33,7 +33,7 @@ export default function App() {
             <Button type="primary">Button</Button>
           </Route>
           <Route path="/foo">
-            <Foo />
+            <Foo>foo</Foo>
           </Route>
         </Switch>
       </div>
